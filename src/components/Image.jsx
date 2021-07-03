@@ -1,10 +1,9 @@
-const Image = () => {
-    const url = "https://images.dog.ceo/breeds/shiba/shiba-8.jpg";
+const Image = (props) => {
     return (
       <div className="card">
         <div className="card-image">
           <figure className="image">
-            <img src={url} alt="cute dog!" />
+            <img src={props.src} alt="cute dog!" />
           </figure>
         </div>
       </div>
